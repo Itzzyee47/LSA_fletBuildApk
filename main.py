@@ -6,6 +6,6 @@ def main(page: ft.Page):
      
     wv = ft.Text('WebView was the problem')
     sa = ft.SafeArea(content=wv,)
-    page.add(sa,)
+    page.add(sa)
 
 ft.app(main)
