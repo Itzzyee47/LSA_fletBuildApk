@@ -54,8 +54,8 @@ jobs:
 
     - name: Flet Build APK
       run: |
-        flutter config --no-analytics
-        flet build apk --verbose --build-number=$BUILD_NUMBER --build-version=$BUILD_VERSION --project=fletCRUD --product=fletCRUD --no-android-splash
+        flutter config --no-analytics 
+        flet build apk --verbose --build-number=$BUILD_NUMBER --build-version=$BUILD_VERSION --project=fletCRUD --product=fletCRUD --no-android-splash --include-packages flet_webview
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4.3.4
