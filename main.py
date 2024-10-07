@@ -6,7 +6,7 @@ def main(page: ft.Page):
     # Create a WebView to load a website
     web_view = ft.WebView(
         src="https://landmarkai.onrender.com/",
-        expand=1,
+        width=310,height=600
     )
     #wv = ft.Text('WebView was the problem')
     sa = ft.SafeArea(content=web_view,expand=True,)
