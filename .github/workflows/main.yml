@@ -54,7 +54,7 @@ jobs:
     - name: Flet Build APK
       run: |
         flutter config --no-analytics
-        flet build apk --verbose --flutter-build-args=--target-platform --flutter-build-args=android-arm --product WhatsClone
+        flet build apk --verbose --flutter-build-args=android-arm --build-number=$BUILD_NUMBER --build-version=$BUILD_VERSION --product WhatsClone
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4.3.4
