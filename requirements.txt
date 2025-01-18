@@ -1,2 +1,1 @@
 flet==0.24.*
-firebase-admin
